@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p:nth-child(3n){
+            color: red;
+            text-align-last: center
+        }
+        p:nth-child(3n+1){
+            margin: 2px;
+            color: greenyellow;
+            text-align-last: center
+        }
+        p{
+            text-transform: uppercase
+        }
+        p::first-letter{
+            text-transform: capitalize
+        }
+        .pos{
+            align-content: center;
+        }
+        .text{
+            margin-left: 48%;
+            position:relative;
+            align-self: center;
+        }
+        button:hover{
+            color: white;
+            background-color:aqua;
+            text-transform:uppercase
+        }
+    </style>
+</head>
+<body class="pos">
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <button class="text">Check</button>
+</body>
+</html>

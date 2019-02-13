@@ -1,0 +1,15 @@
+order of precedence 
+inline
+id
+class
+tag
+
+selectors
+id based
+class based
+tag based
+
+css
+embedded
+inline
+external
