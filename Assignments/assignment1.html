@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .element{
+            width: 50%;
+            height: 35px;
+            margin-top: 40px;
+            margin-left: 25%;
+            background-color: white;
+            border: 1px solid orange;
+            transform: rotate(-355deg);
+            box-shadow: 2px 2px 2px 2px orange
+        }
+        .container{
+            border: 3px dashed blue;
+            overflow: auto;
+            margin: 1%;
+            margin-top: 50px;
+            height: 1000px;
+        }
+        .left{
+            width: 25%;
+            float: left;
+        }
+        .right{
+            width: 25%;
+            float: left;
+            /* position: relative; */
+        }
+        .left2{
+            width: 25%;
+            float: left;
+        }
+        .right2{
+            width: 25%;
+            float: left;
+            /* position: relative; */
+        }
+        .elementIn{
+            /* width: 50%; */
+            height: 30px;
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: white;
+            border: 1px solid blue;
+            border-radius: 8px;
+            box-shadow: 2px 2px 2px 2px orange;
+            opacity: .8;
+            /* justify-content: center; */
+        }
+        .elementIn:nth-child(2n){
+            transform: rotate(-355.5deg);
+            /* z-index: 0; */
+            position: relative;
+            /* opacity: .8; */
+        }
+        .elementIn:nth-child(2n+1){
+            transform: rotate(355.5deg);
+            z-index: 1;
+            position: relative;
+            /* opacity: 1; */
+        }
+        .elementIn:hover{
+            box-shadow: 2px 2px 2px 2px orangered;   
+            background-color: yellowgreen;
+        }
+        .p1{
+            margin: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: blue;
+            font-size: 15px;
+            line-height: 30px;
+            opacity: 1;
+        }
+        .text{
+            margin: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: brown;
+            text-shadow: 2px 2px 2px brown;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .p1:hover{
+            color: darkblue;
+            font-style: unset;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="element"><p class="text">News Clipping for today</p></div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="elementIn"><p class="p1">AcadGild Launches Front End Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches CSS3 Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches Angular Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches CSS3 Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches CSS Courses</p></div>
+        </div>
+        <div class="right">
+            <div class="elementIn"><p class="p1">AcadGild Launches Front End Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches Android End Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches java Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches UI design Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches Front End Courses</p></div>
+        </div>
+        <div class="left2">
+            <div class="elementIn"><p class="p1">AcadGild Launches Front End Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches CSS3 Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches Angular Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches CSS3 Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches CSS Courses</p></div>
+        </div>
+        <div class="right2">
+            <div class="elementIn"><p class="p1">AcadGild Launches Front End Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches Android End Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches java Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches UI design Courses</p></div>
+            <div class="elementIn"><p class="p1">AcadGild Launches Front End Courses</p></div>
+        </div>
+    </div>
+</body>
+</html>
