@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="500" height="500" id="canvas"></canvas>
+    <script>
+        var canvas=document.getElementById("canvas")
+        var c = canvas.getContext('2d');
+        c.fillStyle = "Blue";
+        c.fillRect(50,50,400,400);
+        c.fillStyle = "Red";
+        c.fillRect(70,70,360,360);
+
+        c.fillStyle = "Blue";
+        c.beginPath();
+        c.moveTo(220,200);
+        c.lineTo(270,200);
+        c.lineTo(320,250);
+        c.lineTo(320,300);
+        c.lineTo(270,350);
+        c.lineTo(220,350);
+        c.lineTo(170,300);
+        c.lineTo(170,250)
+        c.closePath();
+        c.stroke();
+        c.fill();
+        
+        c.fillStyle = "Yellow";
+        c.font = "bold "+20+"pt Arial";
+        c.fillText("Hi, I am ",200,250);
+        c.fillText("Octogon!!",190,300);
+    </script>
+</body>
+</html>

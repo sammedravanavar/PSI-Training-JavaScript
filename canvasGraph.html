@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" height="1000px" width="1000px"></canvas>
+    <script>
+        var canvas= document.getElementById('canvas')    
+        var ctx = canvas.getContext('2d');
+        var i,x,y;
+        var data = [16,68,20,30,54,22,49];
+        var labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
+
+        ctx.moveTo(50,500);
+        ctx.lineTo(1000,500);
+        ctx.moveTo(50,500);
+        ctx.lineTo(50,50);
+        
+        x=50;
+        y=500;
+        for(i=0;i<data.length; i++){
+            x=x+50;
+            y=y-data[i]*5;
+            ctx.fillStyle = "Blue";
+            ctx.fillRect(x,y,50,data[i]*5);
+            ctx.font = "bold "+14+"pt Arial";
+            ctx.fillText(labels[i],x+10,520);
+            ctx.font = "bold "+12+"pt Arial";
+            ctx.fillStyle = "Black";
+            ctx.fillText(data[i],20,y);
+            // ctx.moveTo(x,500);
+            // ctx.lineTo(x,y);
+            // ctx.lineTo(x+20,y);
+            // ctx.lineTo(x+20,500);
+            y=500;
+            x=x+50;
+        }
+        
+        
+        ctx.stroke();
+        
+    </script>
+    
+</body>
+</html>
