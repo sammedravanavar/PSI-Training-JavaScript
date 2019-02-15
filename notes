@@ -1,4 +1,4 @@
-order of precedence 
+xxorder of precedence 
 inline
 id
 class
@@ -13,3 +13,12 @@ css
 embedded
 inline
 external
+
+
+Units of css
+px
+percentage
+ems
+
+how browser works
+weird part of js
