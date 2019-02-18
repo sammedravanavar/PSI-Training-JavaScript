@@ -22,3 +22,24 @@ ems
 
 how browser works
 weird part of js
+
+installing packages
+npm
+bower
+yarn
+
+extra small ---> xs
+small       ---> sm
+medium      ---> md
+large       ---> lg
+extra large ---> xl
+
+exrta small - less than 576px
+small       - 576px to 768px
+medium      - 768 
+large       - 992
+extra large - 1200
+
+input control --> "form-control"
+
+btn           --> "btn btn-primary"
