@@ -43,3 +43,10 @@ extra large - 1200
 input control --> "form-control"
 
 btn           --> "btn btn-primary"
+
+
+document.getElementId()
+document.getElementsByClassName()
+
+javascript notes
+always recommended to start the first line of the file with use strict
