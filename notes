@@ -44,17 +44,29 @@ input control --> "form-control"
 
 btn           --> "btn btn-primary"
 
-
+Selector Methods
 document.getElementId()
 document.getElementsByClassName()
+document.getElementsByName()
+document.getElementsByTagName()
 
 javascript notes
-always recommended to start the first line of the file with use strict
+1. always recommended to start the first line of the file with use strict
+2. declare variables in second line
+3. wrap your code inside the immediate function
 
 MDN - Mozilla Developer Network
 javascript Jackal
 Javascript sexy
 John papa
 scotch.io
-
 risingstack.io
+
+browser converts html(document) into javascript compatible object model called DOM
+DOM maintains the parent-child relationships
+
+callback is a function passed as a parameter to another function
+
+this talks about current executing context
+
+
