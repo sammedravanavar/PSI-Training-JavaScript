@@ -68,5 +68,22 @@ DOM maintains the parent-child relationships
 callback is a function passed as a parameter to another function
 
 this talks about current executing context
+all functions run under the global context (window object)
+new keyword is used to create a new context
+
+properties are attached to context
+variables are attached to scope
+
+//assessment 1
+attribute based regex to select the class or element
+prepare well for css syntax
+look into font sizes and families
+anchor tags
+iframes
+attributes - content editable
+relative positions
+media query
+custom font for the websites
+ems to pixels
 
 
