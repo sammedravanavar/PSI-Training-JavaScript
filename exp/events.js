@@ -20,5 +20,9 @@
             e.preventDefault()
         }
     }
+    var qs = document.querySelector('#btn')
+    var qsa = document.querySelectorAll('#btn')
+    console.log(qs)
+    console.log(qsa)
 })()
 

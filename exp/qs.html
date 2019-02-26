@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id='parent'>
+      <button id='child'>Child</button>
+    </div>
+    <script>
+        var parent = document.querySelector('#parent');
+        parent.addEventListener('click',function(e){
+            console.log("Parent clicked")
+            e.stopPropagation();
+        },
+        // true
+        )
+        var child = document.querySelector('#child');
+        console.log(child)
+        child.addEventListener('click',function(e){
+            console.log('chilld clicked');
+            // console.log(e)
+            e.stopPropagation();
+        },
+        // true
+        )
+        // child.addEventListener('contextmenu',function(e){
+        //     // console.log('chilld clicked');
+        //     // e.preventDefault();
+        //     window.alert('right click disabled')
+        // },
+        // true
+        // )
+    </script>
+</body>
+</html>
+
+
+<!-- 
+    default - child then parent
+    true in parent - parent then child
+    stopPropagation in parent - child then parent
+    true in child - child then parent
+    stopPropagation in child - only child
+    true and stopPropagation in parent - only Parent
+    true and stopPropagation in child - only child
+    true in both - parent then child
+    stopPropagation in both - only child 
+ -->

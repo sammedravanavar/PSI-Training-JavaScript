@@ -8,6 +8,8 @@ selectors
 id based
 class based
 tag based
+contextual
+attribute based
 
 css
 embedded
@@ -86,4 +88,5 @@ media query
 custom font for the websites
 ems to pixels
 
-
+Multipart form data
+document.querySelector

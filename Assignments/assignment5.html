@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="../js/register.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assignment5.css">
+</head>
+<body>
+    <div class="container justify-content-center alert alert-danger" id="alarmmsg">
+    </div>
+    <div class="container justify-content-center">
+        <form class="form-verticle" action="#" method="POST">
+            <div class="from-group row mt-3 justify-content-center">
+                <label class="form-label col-sm-3">First Name</label>
+                <input class="form-control col-sm-4" type="text" name="fName" id="fName" value="" placeholder="Enter your first Name" autofocus required>
+            </div>
+            <div class="from-group row mt-3 justify-content-center">
+                <label class="form-label col-sm-3">Last Name</label>
+                <input class="form-control col-sm-4" type="text" name="lName" id="lName" value="" placeholder="Enter your Last Name" required>
+            </div>
+            <div class="from-group row mt-3 justify-content-center">
+                <label class="form-label col-sm-3">Age</label>
+                <input class="form-control col-sm-4" type="number" name="age" id="age" value="" placeholder="Enter your age" required>
+            </div>
+            <div class="from-group row mt-3 justify-content-center">
+                <label class="form-label col-sm-3">Gender</label>
+                <input class="col-sm-1" type="radio" name="gender" value="male" id="gender" required>
+                <label class="form-label col-sm-1">Male</label>
+                <input class="col-sm-1" type="radio" name="gender" value="female" id="gender">
+                <label class="form-label col-sm-1">Female</label>
+            </div>
+            <div class="from-group row mt-3 justify-content-center">
+                <label class="form-label col-sm-3">Country</label>
+                <select class="form-control col-sm-4" id="select">
+                    <option>India</option>
+                    <option>EU</option>
+                    <option>Australia</option>
+                    <option>USA</option>
+                </select>
+            </div>
+            <div class="checkbox row mt-5">
+                <input class="offset-md-3" type="checkbox" id="agree" onchange="document.getElementById('submit').disabled = !this.checked">
+                <label class="form-label col-sm-3">
+                    I Agree to the terms and conditions
+                </label>
+            </div>
+            <div class="form-group row mt-2">        
+                <div class="offset-md-3 text-center">
+                    <button type="button" class="btn btn-primary" id="submit" disabled>Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./assignment5.js"></script>
+</body>

@@ -1,0 +1,14 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#alarmmsg{
+    display: none;
+}
+
+.form-group.required .control-label:after {
+    content:"*";
+    color:red;
+  }
