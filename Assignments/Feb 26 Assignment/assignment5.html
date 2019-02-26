@@ -12,31 +12,32 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assignment5.css">
 </head>
-<body>
-    <div class="container justify-content-center alert alert-danger" id="alarmmsg">
-    </div>
+<body class="bg">
     <div class="container justify-content-center">
-        <form class="form-verticle" action="#" method="POST">
-            <div class="from-group row mt-3 justify-content-center">
+        <div class="from-group row mt-5 justify-content-center">
+            <h1>Register</h1>
+        </div>
+        <form class="form-verticle" id="myForm" action="#" method="POST">
+            <div class="from-group row mt-5 justify-content-center">
                 <label class="form-label col-sm-3">First Name</label>
                 <input class="form-control col-sm-4" type="text" name="fName" id="fName" value="" placeholder="Enter your first Name" autofocus required>
             </div>
-            <div class="from-group row mt-3 justify-content-center">
+            <div class="from-group row mt-5 justify-content-center">
                 <label class="form-label col-sm-3">Last Name</label>
                 <input class="form-control col-sm-4" type="text" name="lName" id="lName" value="" placeholder="Enter your Last Name" required>
             </div>
-            <div class="from-group row mt-3 justify-content-center">
+            <div class="from-group row mt-5 justify-content-center">
                 <label class="form-label col-sm-3">Age</label>
                 <input class="form-control col-sm-4" type="number" name="age" id="age" value="" placeholder="Enter your age" required>
             </div>
-            <div class="from-group row mt-3 justify-content-center">
+            <div class="from-group row mt-5 justify-content-center">
                 <label class="form-label col-sm-3">Gender</label>
                 <input class="col-sm-1" type="radio" name="gender" value="male" id="gender" required>
                 <label class="form-label col-sm-1">Male</label>
                 <input class="col-sm-1" type="radio" name="gender" value="female" id="gender">
                 <label class="form-label col-sm-1">Female</label>
             </div>
-            <div class="from-group row mt-3 justify-content-center">
+            <div class="from-group row mt-5 justify-content-center">
                 <label class="form-label col-sm-3">Country</label>
                 <select class="form-control col-sm-4" id="select">
                     <option>India</option>
@@ -45,15 +46,15 @@
                     <option>USA</option>
                 </select>
             </div>
-            <div class="checkbox row mt-5">
-                <input class="offset-md-3" type="checkbox" id="agree" onchange="document.getElementById('submit').disabled = !this.checked">
+            <div class="checkbox row mt-5 justify-content-center">
+                <input type="checkbox" id="agree" onchange="document.getElementById('submit').disabled = !this.checked">
                 <label class="form-label col-sm-3">
                     I Agree to the terms and conditions
                 </label>
             </div>
-            <div class="form-group row mt-2">        
-                <div class="offset-md-3 text-center">
-                    <button type="button" class="btn btn-primary" id="submit" disabled>Submit</button>
+            <div class="form-group row mt-2 justify-content-center">        
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" id="submit" disabled>Submit</button>
                 </div>
             </div>
         </form>
