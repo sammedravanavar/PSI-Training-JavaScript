@@ -23,16 +23,42 @@
     student.firstName = 'Google'
     student.lastName = 'Doodle'
     student.age = 29
-    console.log(student.getFullName())
+    // console.log(student.getFullName())
 
     let dept = new Department('asa','sas');
     dept.firstName = 'axa'
     dept.lastName = 'csc'
-    console.log(dept)
+    // console.log(dept)
 
-    console.log(student.add(3))
+    // console.log(student.add(3))
 
     let m = new Map()
+    m.set('abc','def')
+    m.set('abc','dgf')
+    m.set('cdf','jsg')
+    m.forEach((v,k)=>{
+        // console.log(v)
+        // console.log(k)
+    })
+    // console.log(m.size)
+    m.delete('abc')
+    // console.log(m)
+
+    let n =new Set()
+    n.add('aasd')
+    n.add('asas')
+    console.log(n.keys())
+    console.log(n.size)
+    console.log(n.entries())
+
+    let user = {name: 'doremon', age: 90, gender: 'null'}
+    var {name,age} = {...user}  //destructuring of object
+    console.log(name)
+    console.log(age)
+
+    var [a,b] = [1,2]
+    var {a,b} = {...[a,b]}
+    console.log(a+' '+b)
 })()
 
 // var fname = ""
