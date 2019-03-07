@@ -1,0 +1,18 @@
+json - Javascript object notation
+xml - Extensible Markup Language
+xslt - Extensible Stylesheet Language Transformations
+//history
+data used to be in the form of xml objects
+
+
+//defer, async
+
+
+Test Driven Develoment Libraries
+JSUnit
+Jasmine + karma
+Mocha
+jest + karma
+enzyme
+karma + chai
+Istanbul
