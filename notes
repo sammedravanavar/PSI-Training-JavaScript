@@ -10,3 +10,8 @@ Istanbul
 
 1. Do not write code, create unit test function
 2. Write your first unit test and make test fail
+
+
+"Before each" statement is run for every statemen
+'Mocks' are the dummy functions with no code but acts a real function. We can create a mock and then we will 
+return the data from the mock. They are helpful in simualting the behaviour of dummy servers, dummy http calls

@@ -1,14 +1,14 @@
 (function(){
     'use strict';
-    var elements = [{ author: "Dan Brown", book: "The Da Vinci Code", date: "2003-03-01"},
-                    { author: "J R R Tolkien", book: "The Lord of The Rings", date: "1954-07-25"}]
+    // var elements = [{ author: "Dan Brown", book: "The Da Vinci Code", date: "2003-03-01"},
+    //                 { author: "J R R Tolkien", book: "The Lord of The Rings", date: "1954-07-25"}]
 
         var numberOfColumns = [];
         function createElement(elementType){
             return document.createElement(elementType)
         }
         
-        function createHeaderRow(){
+        function createHeaderRow(elements){
             var headerRow = createElement('tr')
             for(var i in elements[0]){
                 var column = createElement('th')
@@ -19,7 +19,7 @@
             console.log(headerRow)
             return headerRow
         }
-        function createDataRow(i){
+        function createDataRow(elements,i){
             // for(var i=0; i<elements.length;i++){
                 var dataRow = createElement('tr') 
                 switch(i%3) {
@@ -58,16 +58,17 @@
                 return dataRow
             // }
         }
-        function createTable(){
-            var tbl = document.getElementById('tblElements')
+        function createTable(elements,tableId){
+            // var tbl = document.getElementById('tblElements')
+            var tbl = document.getElementById(tableId)
             tbl.className = "table table-striped table-bordered table-dark"
             var thead = createElement('thead')
-            thead.appendChild(createHeaderRow())
+            thead.appendChild(createHeaderRow(elements))
             tbl.appendChild(thead)
             var tbody = createElement('tbody')
             tbody.id = 'tBody';
             for(var i=0; i<elements.length;i++){
-                tbody.appendChild(createDataRow(i))
+                tbody.appendChild(createDataRow(elements,i))
             }
             tbl.appendChild(tbody)
             // var buttons = document.getElementsByClassName('btn')
@@ -78,7 +79,12 @@
             // }
             console.log(tbl)
         }
-        createTable()
+        function render(elements,tableId){
+            createTable(elements, tableId)
+        }
+        let books = window.collection.getBooks()
+        render(books,'tblElements')
+
 
 
         let add = document.getElementById('add');
@@ -86,10 +92,12 @@
             let author = document.getElementById('author')
             let book = document.getElementById('book')
             let date = document.getElementById('date')
-            elements.push({author:author.value, book: book.value, date: date.value})
+            
+            window.collection.add(author.value,book.value,date.value)
+            // elements.push({author:author.value, book: book.value, date: date.value})
             author.value=''; book.value=''; date.value=''
-            console.log(elements)
-            let tbody = document.getElementById('tBody')
-            tbody.appendChild(createDataRow(elements.length-1))
+            // console.log(elements)
+            // let tbody = document.getElementById('tBody')
+            // tbody.appendChild(createDataRow(elements.length-1))
         })
 })();
