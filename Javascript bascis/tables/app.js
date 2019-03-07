@@ -30,11 +30,11 @@
         console.log(headerRow);
         return headerRow;
     }
-    function createDataRow(x) {
+    function createDataRow(x,columnNames,collection) {
             var dataRow = createElement('tr');
             for(var columns=0;columns<columnNames.length;columns++){
                 var dataColumn = createElement('td');
-                dataColumn.innerHTML = students[x][columnNames[columns]];
+                dataColumn.innerHTML = collection[x][columnNames[columns]];
                 dataRow.appendChild(dataColumn);
             };
             var tdForButton = createElement('td');
@@ -43,7 +43,6 @@
             button.rowNumber =x;
             button.innerText=x;
             tdForButton.appendChild(button);
-        
             dataRow.appendChild(tdForButton);
         
         console.log(dataRow);
