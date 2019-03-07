@@ -8,11 +8,3 @@ data used to be in the form of xml objects
 //defer, async
 
 
-Test Driven Develoment Libraries
-JSUnit
-Jasmine + karma
-Mocha
-jest + karma
-enzyme
-karma + chai
-Istanbul

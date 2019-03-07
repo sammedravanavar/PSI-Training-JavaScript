@@ -1,1 +1,0 @@
-Jasmine test example
