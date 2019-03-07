@@ -1,4 +1,4 @@
-//module pattern
+//modular pattern
 //provide interface hide functionality
 var x = (function(){
     console.log("how r u")
@@ -16,7 +16,11 @@ x.httpRequest()
 
 //singleton design
 // eg: redux
-
+//single strore single instance
 
 
 //observer design
+//a middle server(observer) notify to the subscribers
+
+
+//vijendra, michael packiyaraj
