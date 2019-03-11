@@ -20,7 +20,7 @@ function Factory() {
 	        return employee;
 	    }
 	}
-20.	 
+	 
 21.	var FullTime = function () {
 22.	    this.hourly = "$12";
 23.	};

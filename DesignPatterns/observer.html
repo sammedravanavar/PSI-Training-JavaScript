@@ -6,10 +6,6 @@
 	</head>
 	<body>
 		<script>
-			/* Title: Observer
-			 Description: is a publish/subscribe pattern which allows a number of observer objects to see an event
-			 */
-
 			var observer = {
 				addSubscriber:function (callback) {
 					this.subscribers[this.subscribers.length] = callback;
@@ -75,9 +71,6 @@
 			la_times.addSubscriber(jill.gossip);
 			la_times.newIssue();
 
-			// reference
-			// http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript
-			// http://shop.oreilly.com/product/9780596806767.do?sortby=publicationDate
 		</script>
 	</body>
 </html>
