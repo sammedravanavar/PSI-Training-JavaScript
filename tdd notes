@@ -1,0 +1,34 @@
+Test Driven Develoment Libraries
+JSUnit
+Jasmine + karma
+Mocha
+jest + karma
+enzyme
+karma + chai
+Istanbul
+
+
+1. Do not write code, create unit test function
+2. Write your first unit test and make test fail
+
+
+"Before each" statement is run for every statemen
+'Mocks' are the dummy functions with no code but acts a real function. We can create a mock and then we will 
+return the data from the mock. They are helpful in simualting the behaviour of dummy servers, dummy http calls
+
+make sure your code is independent of UI
+make sure your code is following the SRP(Single Responsibility Principle)
+ensure that there are proper exception handling in your code
+ensure your functions have return statements, should be testable
+
+
+jasmine, mocha, jest -> unit testing Libraries
+chai is an assertion library
+sinon is a mock creation library
+
+all the three libraries are having the describe statement(function)
+purpose of describe ->  1.create environment
+                        2.group unit test         
+it function -> actual unit testing happens inside the it method
+before each method -> this method will alloe you to set the data or mock data or mock functions 
+                        These mock data can be set before execution of every unit test
