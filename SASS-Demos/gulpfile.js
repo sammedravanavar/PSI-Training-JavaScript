@@ -7,7 +7,10 @@ gulp.task('convertscss', function() {
         .pipe(gulp.dest('./css/'));
 });
 
-gulp.task('default', gulp.parallel('convertscss'));
+//gulp.task('default', gulp.parallel('convertscss'));
+gulp.task('default',function(){
+    return gulp.watch('styles/*.scss', gulp.series('convertscss'));
+})
 
 // var gulp = require('gulp'),
 //   cssnano = require('gulp-cssnano'),
