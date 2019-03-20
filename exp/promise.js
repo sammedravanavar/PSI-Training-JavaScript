@@ -31,7 +31,7 @@ promise.then(data=>{
 // Promise.all
 console.log('I am first')
 
-// Promise.all([promise, promise2])
+// .all([promise, promise2])
 // .then((data)=>{
 //     console.log(data)
 // })
