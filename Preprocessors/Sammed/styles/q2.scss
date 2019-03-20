@@ -1,0 +1,17 @@
+  $bodyColor: black;
+
+  @function headerColor($color) {
+    @if (lightness($color) < 50) {
+      @return #ffffff; // Lighter backgorund, return dark color
+    } @else {
+      @return #000000; // Darker background, return light color
+    }
+  }
+
+  body {
+    background-color: $bodyColor;
+  }
+  h1 {
+    color: headerColor($bodyColor);
+  }
+

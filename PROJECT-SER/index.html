@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+  </head>
+
+  <body>
+    <h1 id="h" draggable="true" ondragstart="drag(event)" ondragleave="drag(event)">Kittens!</h1>
+    <div style="border: 1px solid grey; width: 80%; height: 500px"
+      ondrop="drop(event)"
+      ondragover="dragover(event)"></div>
+    <!-- <img src="https://placekitten.com/440/200" alt="kitty1"> -->
+    <!-- <img id="myImage" src="" alt="kitty2"> -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+    <script>
+      let count=0;
+      function drag(e){
+        if(count++ <3) console.log('start')
+        else console.log("bas kar!")
+        e.dataTransfer.setData("text/plain", e.target.id)
+      }
+      function drop(e){
+        e.preventDefault();
+        let data = e.dataTransfer.getData('text/plain');
+        e.target.appendChild(document.getElementById(data))
+      }
+      function dragover(e){
+        e.preventDefault()
+        e.dataTransfer.dropEffect = "move"
+      }
+
+    </script>
+  </body>
+
+</html>

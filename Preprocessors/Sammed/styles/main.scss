@@ -1,0 +1,11 @@
+@mixin changeColor{
+  a:visited {
+    color: blue
+  }
+  a:hover {
+    color: green
+  }
+  a:active {
+    color: red
+  } 
+}
