@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Assessment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+    <!-- <script type="text/javascript" src="PRODUCT.JSON"></script> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Assessment</a>
+            <form class="form-inline col-md-10">
+                <select class="custom-select" id="country">
+                </select>
+            </form>
+        </nav>
+    </header>
+    <div class="container">
+        <table id="table">
+            <thead>
+            <tr>
+                <!-- <th data-field="id" data-sortable="true">Item ID</th> -->
+                <th data-field="name" data-sortable="true">Name</th>
+                <th data-field="company" data-sortable="true">Company</th>
+                <th data-field="price" data-sortable="true">Price</th>
+                <th>Show Name</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    // var mydata = JSON.parse(PRODUCT.JSON);
+        var $table = $('#table');
+        var mydata;
+        // $(function(){
+            //     $.getJSON('PRODUCT.json',function(data){
+            //         mydata = data;        
+            //     })
+            // });
+        mydata = [
+                {
+                    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
+                    "name": "CHECK PRINT SHIRT",
+                    "company":"Sapient",
+                    "price": 110
+                },
+                {
+                    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+                    "name": "GLORIA HIGH LOGO SNEAKER",
+                    "company":"Sapient",
+                    "price": 91
+                },
+                {
+                    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+                    "name": "CATE RIGID BAG",
+                    "company":"Sapient",
+                    "price": 94.5
+                },
+                {
+                    "imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
+                    "name": "GUESS CONNECT WATCH",
+                    "company":"Sapient",
+                    "price": 438.9
+                },
+                {
+                    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+                    "name": "'70s RETRO GLAM KEFIAH",
+                    "company":"Sapient",
+                    "price": 20
+                }];
+        $(function() {
+            $('#table').bootstrapTable({
+                data: mydata,
+                columns: [ {},{},{},  
+                {
+                    field: 'operate',
+                    title: 'Add',
+                    align: 'center',
+                    valign: 'middle',
+                    clickToSelect: false,
+                    formatter : function(value,row,index) {
+                    //return '<input name="elementname"  value="'+value+'"/>';
+                    return '<button class=\'btn btn-primary \' url="'+row.imgUrl+'" name="'+row.name+'" company="'+row.company+'" price="'+row.price+'"  >Add</button> ';
+                    }
+                }]               
+            });
+            $(".btn").click(function(){
+                var name = $(this).attr('name');
+                var company = $(this).attr('company');
+                var price = $(this).attr('price');
+                var url = $(this).attr('url')
+                var img = $('<img>').attr({
+                    src: url,
+                    width: '100px',
+                    height: '100px'
+                })
+                $(".modal .modal-body").empty()
+                $(".modal .modal-body").prepend(img)
+                $(".modal .modal-footer").empty()
+                $(".modal .modal-footer").append("<label>"+name+"</label>")
+                $(".modal .modal-footer").append("<label>"+company+"</label>")
+                $(".modal .modal-footer").append("<label>"+price+"</label>")
+                $(".modal").modal("show");
+            });
+        });
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
