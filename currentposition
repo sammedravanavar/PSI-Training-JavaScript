@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Location</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<script src="main.js"></script>
+</head>
+<body>
+<button onclick = "getMyLocation()">Run Geolocation</button>
+<div id="result">
+Result will be displayed here.
+</div>
+<script>
+function getMyLocation() {
+navigator.geolocation.getCurrentPosition(locationSuccess,locationFail);
+}
+function locationSuccess(position) {
+var latitute = position.coords.latitude;
+var longitude = position.coords.longitude;
+document.getElementById("result").innerHTML = "Location in latitute and longitude is " +latitute+ " and" +longitude;
+}
+function locationFail() {
+alert("Failed");
+}
+</script>
+</body>
+</html>
