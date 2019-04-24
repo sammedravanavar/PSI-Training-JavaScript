@@ -1,0 +1,33 @@
+Factory Design Pattern:
+Depending on the input subclasses decide what to create
+
+photoshop
+apache server
+what is cascading?
+A11y - accessibility
+I18N - internationalization
+Web accessibility
+Media queries for different devices
+Resposive building blocks
+screenreader class (sr-only)
+aria-label, aria-hidden
+mobile first approach
+Adaptive and Resposive design
+Metatag viewport 
+Margin collapsing, cascading, overlapping
+Layout Shifter Pattern, Mondrian Pattern, Basic Gallery Pattern
+Types of functions
+IE specific events
+ES6
+Cross browser and cross origin
+How ajax is working internally?
+Ajax client server communication cooncept
+what are the parameters browser sends to the server
+How https is working?
+http1 vs http2
+Prototypes
+//weird part of js by antony alicea
+//how browser works by tali garsiel
+//this keyword
+//prevent default
+//javascript:void(0)
