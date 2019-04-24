@@ -1,0 +1,11 @@
+@import 'main';
+body #main .value {
+    color: #eee;
+    @include changeColor();
+    a.link {
+        color: #101010;
+        text-decoration: none;
+        font-size: 2em;
+    }
+ 
+}

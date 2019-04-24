@@ -1,0 +1,14 @@
+.btn-success {
+  background: green; }
+
+.btn-primay {
+  background: blue;
+  margin-top: 1px; }
+
+body #main .value {
+  color: #eee;
+  background: blueviolet; }
+  body #main .value a.link {
+    color: #101010;
+    text-decoration: none;
+    font-size: 2em; }

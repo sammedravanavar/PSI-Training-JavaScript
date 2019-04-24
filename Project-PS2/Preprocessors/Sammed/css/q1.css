@@ -1,0 +1,12 @@
+body #main .value {
+  background: darkolivegreen; }
+  body #main .value a:link {
+    color: #eee;
+    text-decoration: none;
+    font-size: 2em; }
+  body #main .value a:visited {
+    color: blue; }
+  body #main .value a:hover {
+    color: green; }
+  body #main .value a:active {
+    color: red; }

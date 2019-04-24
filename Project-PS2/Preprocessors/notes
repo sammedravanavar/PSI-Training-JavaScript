@@ -1,0 +1,44 @@
+package.json is a file where we will define the required dependencies for oue project
+
+javascript toolkit (bundlers)
+Grunt, Gulp, Webpack
+
+
+SASS
+$ -> variables
+@import
+@extend
+@mixin as functions
+@import .sccs -> @include mixinName()
+
+LESS
+lazy loading -> variables are used befo4re being declared and initialized
+builtin functions of less - grayscale,percentage,lighten
+
+@variable
+&:extend(.inline) (where inline is a class)
+.class
+.class{
+    a: .class()         //implementing mixins
+}
+
+parametric mixins
+.class(@variable){
+    prop: @var
+}
+.class{
+    .class(value)
+}
+
+conditional mixins
+.class (@var) when (@var>value) { props }  // @var>value <-- condition
+.class (@var) when (default()) { props } // acts as else condition
+.col-md-@{i}
+
+.generate(4);
+.generate(@n, @i: 1) when (@i =< @n) {   // @i:1 ,-- instantiation
+    .column-@{i} {
+        width: (@i * 100% / @n)
+    }
+    .generate(@n, (@i + 1));
+}

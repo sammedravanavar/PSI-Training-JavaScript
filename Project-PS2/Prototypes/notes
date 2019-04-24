@@ -1,0 +1,3 @@
+no cyclic inheritance
+extend parent properties to children
+this refers to the calling object

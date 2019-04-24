@@ -1,0 +1,8 @@
+@for $i from 1 through 12 {
+    .sapient-col-#{$i} { 
+        width: 100% / 12 * $i;
+        float: left;
+        text-align: center;
+        margin-top: 30px
+    }
+}

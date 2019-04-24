@@ -1,0 +1,9 @@
+Add the modernizr cdn to the web page
+
+Service worker is used to create proxy between actual server and browser.
+They are mainly used to perform offline work
+They will be used to sychronize the data in the background, caching purpose, offline mode working, push notifications
+part of window.navigator
+
+Service worker Life cycle
+Downloading --> Installing --> Activating
