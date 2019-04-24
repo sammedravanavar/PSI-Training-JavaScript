@@ -18,15 +18,33 @@
             position: fixed;
             height: 100vh;
             background: #7386D5;
-            color: #fff;
+            /* color: #fff; */
         }
         .page{
-            float: right;
+            /* float: right; */
+            display: block;
+            width: auto;
+            height: 100vh;
+            background-size: 100% 100%;
+            overflow: hidden;
         }
     </style>
 </head>
     <body>
-       
+       <div class="collapse sidebar" id="collapseExample">
+            <ul class="list-group">
+                <li >Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+        <div class="page">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Toggle Button
+            </button>
+        </div>
     </body>
 </html>
 
