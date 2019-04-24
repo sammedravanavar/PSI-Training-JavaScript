@@ -1,0 +1,31 @@
+node built in libraries
+fs <-- file system
+http
+https
+io
+
+set and get env variables
+
+risingstack.com
+
+pipe() method will take the data from one method and send that information to othe method
+
+In nodejs, errors can be due to many reasons. The simple try catch blocks can handle the errors. But if a global error is 
+occuring then we will use domains to capture the errors
+
+By using the domains, as it is an event driven model
+they are used for error handling and to create a boundary for the code
+
+
+Three ways to send data from UI to server
+1. query string
+2. post call - data in json object
+3. as key and value pairs, form url encoded
+
+body-parser
+it will intercept the incoming request and makes a clean object called
+it used to extract data from the request
+adding bodyparser as a middleware
+
+A middleware in node.js will have access to the request and response, we will apply the business logic and redirect the request 
+to the next step.
