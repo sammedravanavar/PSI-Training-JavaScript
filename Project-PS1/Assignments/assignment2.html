@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px dotted blue;
+            overflow: auto;
+            margin: 1%;
+            margin-top: 50px;            
+        }
+        section{
+            float: left;
+            width: 80%;
+        }
+        aside{
+            float: right;
+            width: 20%;
+        }
+        .items{
+            border: 0.5px dashed black;
+            width: 90%;
+            color: blue
+        }
+        footer{
+            border: 3px dotted blue;
+            overflow: auto;
+            margin: 1%;
+            margin-top: -1%; 
+            border-top: none;
+        }
+        ul{
+            margin-bottom: 1px;
+            padding: 0%;
+        }
+        ul#hli li{
+            display: inline;
+            margin-right: 2%;
+            color: blue;
+            border: 2px dashed blue;
+        }
+        ul#vli li{
+            margin-left: 10%;
+            margin-right: 2%;
+            margin-top: 1px;
+            border: 2px dashed blue;
+        }
+        .ulfooter{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text{
+            margin: 0%;
+            margin-bottom: 2%;
+            text-align: center
+        }
+        .clear-fix:before, .clear-fix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .myfooter{
+            /* margin: 0%; */
+            /* align-content: center; */
+            justify-content: center;
+        }
+        .myAside{
+            padding: 1%;
+            padding-top: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nainital blogCo Blog!</h1>
+            <ul id="hli">
+                <li>Archives</li>
+                <li>Contact Us</li>
+            </ul>
+        </header>
+        <section>
+            <h1>How many should we put you down for?</h1>
+            <aside class="myAside">
+                Aside for nainital
+            </aside>        
+            <p>
+                If you like our articles, try our workshops! Our articles are based on the material from our scientific writing workshops, which cover these and many other topics more thoroughly, with more examples and discussion.
+                We offer on-site workshops for your event or organization, and also host workshops that individual participants can attend. Our on-site scientific writing workshops can range from 1-2 hours to several days in length. We can tailor the length to suit your needs, and we can deliver a writing workshop as a stand-alone activity or as part of scheduled meetings.
+                Our scientific writing workshops consistently receive high praise from participants including graduate students, post-docs, and faculty in diverse fields. Please see our scientific writing workshop page for details.
+                If you found this article helpful or if there is a topic you want us to address 
+            </p>
+        </section>
+        <aside>
+            <h3>Archives</h3>
+            <ul id="vli">
+                <li>October 2010</li>
+                <li>September 2010</li>
+                <li>August 2010</li>
+            </ul>
+        </aside>
+
+    </div>
+    <footer>
+        <h5 class="text">2010 Nainital blogCo.</h5>
+        <ul id="hli" class="ulfooter">
+            <li>Home</li>
+            <li>About</li>
+            <li>Terms of Service</li>
+            <li>Privacy</li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,11 @@
+Getting and setting values from input boxes
+var x = $('#id').val()
+$('#id').val('kiran')
+
+$('#p1').html('<h1>xxxx</h1>')
+        or
+<p>
+  <h1>xxxx</h1>
+</p>
+
+let x = $('<tr/>')

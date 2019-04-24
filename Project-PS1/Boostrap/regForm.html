@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="../js/register.js"></script> -->
+    <script src="../js/reference.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <form class="form-verticle">
+            <div class="from-group row mt-3">
+                <label class="form-label col-sm-3">Name</label>
+                <input class="form-control col-sm-4" type="text" name="name" id="nam" value="sam">
+            </div>
+            <div class="form-group row mt-2">
+                <label class="form-label col-sm-3">Password</label>
+                <input class="form-control col-sm-4" type="password" name="password" id="password">
+            </div>
+            <div class="form-group row mt-2">
+                <label class="form-label col-sm-3">Email</label>
+                <input class="form-control col-sm-4" type="email" name="email" id="email" value="a@x.o">
+            </div>
+            <div class="row mt-2">
+                <label class="form-label col-sm-3">Gender</label>
+                <input class="col-sm-1" type="radio" name="gender" value="male" id="gender">Male
+                <input class="col-sm-1" type="radio" name="gender" value="female" id="gender">Female
+            </div>
+            <div class="form-group row mt-2">
+                <label class="form-label col-sm-3">Country</label>
+                <select class="form-control col-sm-4" id="select">
+                    <option>India</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="checkbox row mt-5">
+                <input class="offset-md-3" type="checkbox" value="" id="agree">
+                <label class="form-label col-sm-3">
+                    I Agree to the terms and conditions
+                </label>
+            </div>
+            <div class="form-group row mt-2">        
+                <div class="offset-md-3 text-center">
+                    <button type="button" class="btn btn-primary" onclick="printValues()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>

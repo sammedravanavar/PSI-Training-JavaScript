@@ -1,0 +1,25 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+body{
+  /* height: 100%; */
+}
+.bg{
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover
+}
+#myForm{
+  margin-top: 50px;
+  /* border: 2px solid orangered */
+}
+.form-group.required .control-label:after {
+    content:"*";
+    color:red;
+}
+
+[type="text"],[type="number"]:hover{
+  background-color: lightgray
+}

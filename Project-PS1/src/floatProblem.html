@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            margin: 0;
+            border: 3px solid green;
+            display: block;
+        }
+        .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        #outer{
+            margin-top:100px;
+            margin-left: 40px;
+            width: 670px;
+            border: 2px solid red;
+            padding: 10px;
+            margin: auto;
+        }
+        #last-element{
+            clear: both;
+        }
+        .clear-fix:before, .clear-fix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* .clear-fix:after{
+            
+        } */
+
+    </style>
+</head>
+<body style="background-color: black">
+    <div id="outer" style="overflow: auto">
+        The content is part of outer div
+        <img class="float-left" src="images/photo-1535498730771-e735b998cd64.jpg">
+        <img class="float-right" src="images/photo-1535498730771-e735b998cd64.jpg">
+        <!-- <div id="last-element"></div> -->
+    </div>
+    <div id="outer" class="clear-fix">
+        The content is part of outer div
+        <img class="float-left" src="images/photo-1535498730771-e735b998cd64.jpg">
+        <img class="float-right" src="images/photo-1535498730771-e735b998cd64.jpg">
+        <!-- <div id="last-element"></div> -->
+    </div>
+</body>
+</html>

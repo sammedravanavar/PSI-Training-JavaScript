@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- <button onclick="draw()">Draw Circle</button> -->
+    <canvas id="canvas" height="500" width="500"></canvas>
+    <script>
+        // function draw(){
+            var canvas= document.getElementById('canvas')
+            if(canvas.getContext){
+                var ctx = canvas.getContext('2d');
+                redraw();
+                function redraw(){
+                    //Face
+                    ctx.beginPath();
+                    ctx.arc(75,75,50,0,Math.PI*2,true);
+                    
+                    //Smile
+                    ctx.moveTo(105,92);
+                    ctx.arc(75,75,35,Math.PI/6,5*Math.PI/6,false);
+                    
+                    //Eyes
+                    ctx.moveTo(65,65);
+                    ctx.arc(60,65,5,0,Math.PI,true);
+                    ctx.moveTo(95,65);
+                    ctx.arc(90,65,5,0,Math.PI,true);
+                    
+                    //Nose
+                    ctx.moveTo(75,75);
+                    ctx.lineTo(75,85);
+                    ctx.moveTo(70,85);
+                    ctx.lineTo(80,85);
+
+                    //Smile end right
+                    ctx.moveTo(101,88);
+                    ctx.lineTo(109,96);
+                    
+                    //Smile end left
+                    ctx.moveTo(49,88);
+                    ctx.lineTo(41,96);
+                    
+                    //Neck
+                    ctx.moveTo(75,125);
+                    ctx.lineTo(75,240);
+
+                    //Legs
+                    ctx.moveTo(75,240);
+                    ctx.lineTo(20,280);
+                    ctx.moveTo(75,240);
+                    ctx.lineTo(130,280);
+                    ctx.stroke();
+                }
+
+                //Hands
+                var i=0;
+                setInterval(function(){
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    redraw();
+                    i++;
+                    if(i%4==0){
+                        ctx.moveTo(75,140);
+                        ctx.lineTo(20,160);
+                        ctx.moveTo(75,140);
+                        ctx.lineTo(130,120);
+                    }
+                    else if(i%4==1){
+                        ctx.moveTo(75,140);
+                        ctx.lineTo(20,160);
+                        ctx.moveTo(75,140);
+                        ctx.lineTo(130,160);
+                    }
+                    else if(i%4==2){
+                        ctx.moveTo(75,140);
+                        ctx.lineTo(20,120);
+                        ctx.moveTo(75,140);
+                        ctx.lineTo(130,160);
+                    }
+                    else{
+                        ctx.moveTo(75,140);
+                        ctx.lineTo(20,120);
+                        ctx.moveTo(75,140);
+                        ctx.lineTo(130,120);
+                    }
+                    ctx.stroke();                    
+                },1000);
+            }
+        // }
+    </script>    
+</body>
+</html>

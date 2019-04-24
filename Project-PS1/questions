@@ -1,0 +1,7 @@
+fname, lname age gender countries dropdown, button submit, checkbox TandC
+clcik TandC button enabled
+uncheck Tand C btuoon disabled
+firstanme and lastenam user enter following only - alpha, periosd, space - max -length -20char
+more than 20 char bottstrap base alert notification sdaying max enter 20 char
+age shoulf not be greater 99 should be more than 18
+all are requied, if any missing red alert saying required

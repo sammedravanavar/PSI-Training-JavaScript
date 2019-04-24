@@ -1,0 +1,104 @@
+xxorder of precedence 
+inline
+id
+class
+tag
+
+selectors
+id based
+class based
+tag based
+contextual
+attribute based
+
+css
+embedded
+inline
+external
+
+
+Units of css
+px
+percentage
+ems
+
+how browser works
+weird part of js
+
+installing packages
+npm
+bower
+yarn
+
+extra small ---> xs
+small       ---> sm
+medium      ---> md
+large       ---> lg
+extra large ---> xl
+
+exrta small - less than 576px
+small       - 576px to 768px
+medium      - 768 
+large       - 992
+extra large - 1200
+
+input control --> "form-control"
+
+btn           --> "btn btn-primary"
+
+Selector Methods
+document.getElementId()
+document.getElementsByClassName()
+document.getElementsByName()
+document.getElementsByTagName()
+
+javascript notes
+1. always recommended to start the first line of the file with use strict
+2. declare variables in second line
+3. wrap your code inside the immediate function
+
+MDN - Mozilla Developer Network
+javascript Jackal
+Javascript sexy
+John papa
+scotch.io
+risingstack.io
+
+browser converts html(document) into javascript compatible object model called DOM
+DOM maintains the parent-child relationships
+
+callback is a function passed as a parameter to another function
+
+this talks about current executing context
+all functions run under the global context (window object)
+new keyword is used to create a new context
+
+properties are attached to context
+variables are attached to scope
+
+//assessment 1
+attribute based regex to select the class or element
+prepare well for css syntax
+look into font sizes and families
+anchor tags
+iframes
+attributes - content editable
+relative positions
+media query
+custom font for the websites
+ems to pixels
+
+Multipart form data
+document.querySelector
+
+ES6 Features
+Block level Scope
+Iterators
+Promises
+Arrow operators
+Classes
+Modules
+Generators
+Maps
+Sets
+
